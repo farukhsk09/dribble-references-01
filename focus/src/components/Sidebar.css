@@ -1,5 +1,5 @@
 .sidebar{
-    width: 20vw;
+    width: 17vw;
     height: 100vh;
     background-color: rgb(17 17 18);
 }
@@ -8,7 +8,7 @@
     width: 100%;
     font: 'Open Sans', sans-serif;
     position: relative;
-    left: 3%;
+    left: 8%;
     
 }
 .topsect>.head{
@@ -41,9 +41,9 @@
     font-size: small;
     font-weight: 400;
     position: relative;
-    left: 3%;
+    left: 8%;
 }
-.contents>.content{
+.content{
     display: grid;
     grid-template-columns: 1fr 12fr;
     margin-bottom: 10px;
@@ -74,5 +74,32 @@
     font-size: small;
     font-weight: 400;
     position: relative;
-    left: 3%;
+    left: 8%;
+    color: grey;
+}
+.extra>*>.icon{
+    font-size: large;
+}
+.extra>.partners{
+    height: 40px;
+    width: 88%;
+    background-color: grey;
+    border-radius: 9px;
+    margin-bottom: 4px;
+    margin-left: -5%;
+    color: white;
+}
+.center{
+    height: 100%;
+    position: relative;
+    left: 8%;
+}
+.center>*{
+    position: relative;
+    top: 33%;
+}
+.center>.icon{
+    font-size: 20px;
+    top: 23%;
+    left: -25%;
 }

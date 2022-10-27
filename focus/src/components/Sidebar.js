@@ -1,11 +1,15 @@
 import './Sidebar.css';
-import {AiOutlineQuestionCircle,AiTwotoneCloseSquare,AiTwotoneFolderOpen} from 'react-icons/ai';
-import {BiSquareRounded} from 'react-icons/bi';
-import {MdOutlineExpandMore} from 'react-icons/md';
-import {CgProfile} from 'react-icons/cg';
-import {TbApps} from 'react-icons/tb';
-import {IoIosArrowForward} from 'react-icons/io';
-function Sidebar(){
+import { AiOutlineQuestionCircle, AiTwotoneCloseSquare, AiTwotoneFolderOpen } from 'react-icons/ai';
+import { BiSquareRounded } from 'react-icons/bi';
+import { MdOutlineExpandMore } from 'react-icons/md';
+import { CgProfile } from 'react-icons/cg';
+import { TbApps } from 'react-icons/tb';
+import { IoIosArrowForward } from 'react-icons/io';
+import { IoArrowUpCircleOutline } from 'react-icons/io5';
+import { DiGitMerge ,DiZend} from 'react-icons/di';
+import { RiSettingsLine, RiHistoryLine } from 'react-icons/ri';
+import {SiSalesforce,SiLooker} from 'react-icons/si';
+function Sidebar() {
     return <div className="sidebar">
         <TopSection></TopSection>
         <Contents></Contents>
@@ -13,7 +17,7 @@ function Sidebar(){
     </div>;
 }
 
-function TopSection(){
+function TopSection() {
     return (
         <div className="topsect">
             <div className="three-button-icon"></div>
@@ -28,7 +32,7 @@ function TopSection(){
     );
 }
 
-function Contents(){
+function Contents() {
     return (
         <div className="contents">
             <div className='content'>
@@ -43,7 +47,7 @@ function Contents(){
             <div className='content'>
                 <div></div>
                 <div className='selected'>
-                    <TbApps></TbApps>&nbsp;&nbsp;Executive Summary&nbsp;&nbsp;<IoIosArrowForward className='selected-icon'></IoIosArrowForward></div>
+                    <TbApps></TbApps>&nbsp;&nbsp;Executive Summary&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<IoIosArrowForward className='selected-icon'></IoIosArrowForward></div>
             </div>
             <div className='content'>
                 <div></div>
@@ -79,10 +83,50 @@ function Contents(){
     );
 }
 
-function Extra(){
+function Extra() {
     return (
         <div className="extra">
-            Extra
+            <div className='content'>
+                <IoArrowUpCircleOutline className='icon'></IoArrowUpCircleOutline>
+                <div className='selected'>
+                    &nbsp;Automated imports</div>
+            </div>
+            <div className='partners'>
+                <div className='content center'>
+                    <SiSalesforce className='icon'></SiSalesforce>
+                    <div className='selected'>
+                        &nbsp;Saleforce</div>
+                </div>
+            </div>
+            <div className='partners'>
+                <div className='content center'>
+                    <SiLooker className='icon'></SiLooker>
+                    <div className='selected'>
+                        &nbsp;Looker</div>
+                </div>
+            </div>
+            <div className='content'>
+                <RiHistoryLine className='icon'></RiHistoryLine>
+                <div className='selected'>
+                    &nbsp;History</div>
+            </div>
+            <div className='content'>
+                <DiGitMerge className='icon'></DiGitMerge>
+                <div className='selected'>
+                    &nbsp;Scenarios</div>
+            </div>
+            <div className='content'>
+                <RiSettingsLine className='icon'></RiSettingsLine>
+                <div className='selected'>
+                    &nbsp;Settings</div>
+            </div>
+            <div className='partners'>
+                <div className='content center'>
+                    <DiZend className='icon'></DiZend>
+                    <div className='selected'>
+                        &nbsp;Playground</div>
+                </div>
+            </div>
         </div>
     );
 }
