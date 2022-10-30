@@ -1,4 +1,105 @@
 .main{
     width: 80vw;
     height: 100vh;
+    position: relative;
+    left:3%
+}
+.top-layer{
+    display: grid;
+    grid-template-columns: 7fr 0.5fr 1fr 1fr; 
+    align-items: baseline;
+    height: 50px;
+    margin-bottom: 2em;
+}
+.button{
+    border-radius: 0.5em;
+    padding-top: 0.8em;
+    padding-bottom: 1em;
+    text-align: center;
+    background: #242424;
+    font-size: 0.83em;
+}
+.large{
+    width: 8em;
+    padding-top: 0.6em;
+}
+.small{
+    width: 6em;
+}
+.button>.icon{
+    vertical-align: bottom;
+    font-size: 1.4em;
+}
+.filters{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    font-size: 12px;
+    margin-bottom: 2em;
+}
+.filter{
+    display: flex;
+}
+.filter>*{
+    display: flex;
+    margin-right: 1em;
+}
+.filter>*>.adjust{
+    height: revert;
+}
+.grey{
+    color: grey;
+    font-size: small;
+}
+.stats{
+    height: 70vh;
+    display: grid;
+    /* background-color: #242424; */
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-row-gap: 1em;
+    width: 97%;
+}
+.stats1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    grid-column-gap: 20px;
+}
+.block{
+    background-color: #111112;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.block-text{
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.block-text>.head{
+    font-size: 12px;
+    margin-bottom: 0.8em;
+}
+.block-text>.value{
+    font-size: 28px;
+    margin-bottom: 0.3em;
+}
+.block-text>.subtext{
+    font-size: 12px;
+    color: grey;
+}
+.block-text>.subtext>span{
+    color: green;
+}
+.stats2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.twice{
+    font-size: 18px !important;
+}
+.stats3{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 20px;
 }
