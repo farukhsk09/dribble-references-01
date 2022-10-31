@@ -80,7 +80,8 @@
     margin-bottom: 0.8em;
 }
 .block-text>.value{
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: 500;
     margin-bottom: 0.3em;
 }
 .block-text>.subtext{
