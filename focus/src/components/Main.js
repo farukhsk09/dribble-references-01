@@ -4,6 +4,7 @@ import {DiGitMerge} from 'react-icons/di';
 import {BiSquareRounded} from 'react-icons/bi';
 import {IoIosArrowDown} from 'react-icons/io';
 import {BsArrowUpRight} from 'react-icons/bs';
+import MrrChart from './MrrChart.js';
 function Main(){
     return (
         <div className="main">
@@ -81,9 +82,8 @@ function Main(){
                 <div className='stats2'>
                     <div className='block small'>
                         <div className='block-text'>
-                            <div className='head'>MRR</div>
-                            <div className='value'>$3,662,004</div>
-                            <div className='subtext'><span><BsArrowUpRight></BsArrowUpRight>0.4%</span> vs last month</div>
+                            <div className='head twice'>MRR</div>
+                            <MrrChart></MrrChart>
                         </div>
                     </div>
                     <div className='block small'>

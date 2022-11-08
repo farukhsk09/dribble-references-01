@@ -1,6 +1,9 @@
 .sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
     width: 17vw;
-    height: 100vh;
+    max-height: 850px;
     background-color: rgb(17 17 18);
 }
 .topsect{
